@@ -1,0 +1,11 @@
+body {
+    padding-left: 25px;
+}
+.container-class {
+    background-image: url(welcome/static/img/lion.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 400px;
+    height: 400px;
+    border: 2px dashed #333;
+}

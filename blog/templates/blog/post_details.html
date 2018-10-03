@@ -11,4 +11,14 @@
         <h1>{{ post.title }}</h1>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
+    {% for comment in post.comments.all %}
+        <div class="red">
+        <p>{{comment.body}} -by:<span>{{comment.name}}({{comment.email}})</span></p>
+        </div>
+    {% endfor%}
+    <form method="post">
+    {% csrf_token %}
+    {{form}}
+    <button type="submit">submit</button>
+    </form>
 {% endblock %}

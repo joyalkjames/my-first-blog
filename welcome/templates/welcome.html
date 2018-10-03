@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	body{
+		background-image: url("{% static 'img/lion.jpg' %}")  !important;
+		color: white;
+		height: 500px;
+		padding: 100px 0 0 0;   
+		}
+	}
+</style>
+<body> 
+<h1>
+ <a href="{% url 'post_list' %}" class="top-menu">WELCOME TO MY BLOG. CLICK HERE!</a>
+</h1>
+</body>
+</html>
+
